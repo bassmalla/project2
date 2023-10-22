@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 3000px;
+    perspective: 600px;
+}
+header{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+}
+.list1{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 15px; 
+}
+.list1 li{
+   list-style: none;
+   position: relative;
+   padding: 0px 60px;
+}
+.list1 li a{
+   text-decoration: none;
+   color: rgb(145, 119, 88);
+   font-size: 30px;
+   font-weight: bold;
+}
+.list1 li a::after{
+    content: "";
+     position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity:0;
+ border: solid 2px rgb(0, 0, 0);;
+    transition: 0.5s;
+}
+.list1 li a:hover::after{
+   width:100%;
+   height: 100%;
+   opacity:1;
+}
+.list1 i {
+    font-size: 30px;
+    padding: 0px 10px;
+    opacity: 1;
+}
+.yourbag{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.list1 i:hover{
+    transform: scale(0.9,0.9);
+    opacity: 0.7;
+}
+/* //////////////////////////////////////////////////sec2/////////////////////////////////////////////// */
+section{
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+    padding-top: 150px;
+}
+.poster{
+    width: 999px;
+    height: 500px;
+    background-color: black;
+    background-image: url(../images/pos1.jfif);
+    background-size: cover; 
+}
+.litter1{
+    font-size: 50px;
+    font-weight: 800;
+    padding: 200px 0px 0px 150px;
+}
+.lorem{
+    font-size: 20px;
+    color: rgb(113, 114, 116);
+    padding-left:150px ;
+}
+.btn1{
+    width: 100px;
+    height: 45px;
+  margin-left: 150px;
+  border-radius: 15px;
+  background-color:rgb(145, 119, 88); 
+  border: 3px solid rgb(105, 81, 51);  
+}
+/* ////////////////////////////////////////////sec3////////////////////////////////////////////////////////////////// */
+.section2{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: (2,1fr);
+    grid-gap: 50px 20px;
+    justify-content: center;
+}
+.div1{
+background-color: aquamarine;
+/* padding: 120px; */
+
+}
+.E{
+     grid-column-start: 1;
+     grid-column-end: 3;
+     background-color:rgb(245, 234, 220); 
+}
+.E h1{
+    font-size: 45px;
+    margin-top: -7px;
+    margin-left: 20px;
+}
+.E i{
+    margin-top: 20px;
+    margin-left: 20px;  
+    font-size: 30px;
+    color:rgb(105, 81, 51); 
+}
+.E i:hover{
+    transform:scale(1.3,1.3) ;
+    transition: 1S;
+}
+.A{
+    background-image: url(../images/pl1.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+} 
+.B{
+    background-image: url(../images/pl2.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+} 
+.C{
+    background-image: url(../images/pl4.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+} 
+.D{
+    background-image: url(../images/pl5.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+} 
+.F{
+    background-image: url(../images/pl8.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    transition: 1S;
+} 
+.F:hover{
+    transform:scale(0.9,0.9) ;
+    transition: 2S;
+}
+.G{
+    background-image: url(../images/pl11.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 350PX;
+    transition: 1S;
+    
+}
+.G:hover{
+    transform:scale(0.9,0.9) ;
+    transition: 2S;
+} 
+
+.F h2{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.F p{
+    margin-left: 10px;
+}
+.line1{
+    width: 150px;
+    height: 3px;
+    background-color: rgb(145, 119, 88);
+  margin:20px auto;
+}
+.line1:hover{
+    transform:scale(2,1) ;
+    transition: 0.5s;
+}
+.adress{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+}
+/* /////////////////////////////////////////////sec4//////////////////////////////////////////////////////// */
+.section3{ 
+    margin-top: 50px;  
+    column-count: 4;
+    column-gap: 10px;
+    column-rule: 1px solid black;   
+}
+.div2{
+    /* background-color: aquamarine; */
+    width: 200px;
+     height: 200px; 
+     margin: auto;
+}
+.div2 i{
+    font-size: 40px;
+    padding-left: 75px;
+    padding-top: 50px;
+    transition: 2s;
+}
+.div2 i:hover{
+    transform:translateY(-40px) ;
+    transition: 2S;
+
+}
+.div2 span{
+    color:rgb(113, 114, 116) ;
+}
+/* /////////////////////////////////////////sec5//////////////////////////////////////////////////////////////////////////// */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.section4 ,.front1 ,.back1{
+    width: 250px;
+    height: 350px;
+    /* background-color: blueviolet; */
+}
+.section4{
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section4:hover{
+    transform:rotateY(180deg);
+    transition: 0.6s;
+}
+.front1 ,.back1{
+    position: absolute;
+   
+}
+.front1{
+    background-color: aqua;
+    z-index: 7;
+    backface-visibility: hidden;
+    background-image: url(../images/pl3.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.back1{
+    transform:rotateY(180deg);
+    background-image: url(../images/pl3.jfif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.overlay{
+    background-color: rgba(226, 219, 219, 0.452);
+    opacity: 0.7;
+}
+.back1 i{
+  padding-top: 250px;
+  font-size: 30px;
+}
+/* -------------------------------------------------------------------------------- */
+.section5 ,.front2 ,.back2{
+    width: 250px;
+    height: 350px;
+    /* background-color: blueviolet; */
+}
+.section5{
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section5:hover{
+    transform:rotateY(180deg);
+    transition: 0.6s;
+}
+.front2 ,.back2{
+    position: absolute;
+   
+}
+.front2{
+    background-color: aqua;
+    z-index: 7;
+    backface-visibility: hidden;
+    background-image: url(../images/pl7.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.back2{
+    transform:rotateY(180deg);
+    background-image: url(../images/pl7.jfif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.overlay2{
+    background-color: rgba(226, 219, 219, 0.452);
+    opacity: 0.7;
+}
+.back2 i{
+  padding-top: 250px;
+  font-size: 30px;
+}
+/* ----------------------------------------------------------------------------------- */
+
+.section6 ,.front3 ,.back3{
+    width: 250px;
+    height: 350px;
+    /* background-color: blueviolet; */
+}
+.section6{
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section6:hover{
+    transform:rotateY(180deg);
+    transition: 0.6s;
+}
+.front3 ,.back3{
+    position: absolute;
+   
+}
+.front3{
+    background-color: aqua;
+    z-index: 7;
+    backface-visibility: hidden;
+    background-image: url(../images/pl6.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.back3{
+    transform:rotateY(180deg);
+    background-image: url(../images/pl6.jfif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.overlay3{
+    background-color: rgba(226, 219, 219, 0.452);
+    opacity: 0.7;
+}
+.back3 i{
+  padding-top: 250px;
+  font-size: 30px;
+}
+
+/* --------------------------------------------------------------------- */
+.line2{
+    width: 150px;
+    height: 3px;
+    background-color: rgb(145, 119, 88);
+  margin:20px auto;
+}
+.line2:hover{
+    transform:scale(2,1) ;
+    transition: 0.5s;
+}
+.words{
+    column-count: 3;
+    column-gap: 10px;
+}
+.m{
+ width: 300px;
+ height: 150px; 
+ margin:auto;
+/* background-color: aqua; */
+justify-content: space-evenly;
+}
+.m i{
+    color:rgb(46, 58, 25);
+  
+}
+.w1{
+    margin-right: 30px;
+}
+.np{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 100px;
+}
+
+
